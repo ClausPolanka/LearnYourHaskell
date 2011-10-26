@@ -16,10 +16,10 @@ testSphereAreaWithRadius3 = TestCase (assertEqual "sphere area" 113.097336 (Sphe
 testSphereAreaWithRadius6 = TestCase (assertEqual "sphere area" 452.38934 (Sphere.area 6))
 
 allTests = TestList [TestLabel "Calculated cube volume for side length 3" testCubeVolumeWithSideLength3,
-					 TestLabel "Calculated cube volume for side length 6" testCubeVolumeWithSideLength6,
-					 TestLabel "Calculated cube area for side length 3" testCubeAreaWithSideLength3,
-					 TestLabel "Calculated cube area for side length 6" testCubeAreaWithSideLength6,
-					 TestLabel "Calculated sphere volume for radius 3" testSphereVolumeWithRadius3,
-					 TestLabel "Calculated sphere volume for radius 6" testSphereVolumeWithRadius6,
-					 TestLabel "Calculated sphere area for radius 3" testSphereAreaWithRadius3,
-					 TestLabel "Calculated sphere area for radius 6" testSphereAreaWithRadius6]
+                     TestLabel "Calculated cube volume for side length 6" testCubeVolumeWithSideLength6,
+                     TestLabel "Calculated cube area for side length 3" testCubeAreaWithSideLength3,
+                     TestLabel "Calculated cube area for side length 6" testCubeAreaWithSideLength6,
+                     TestLabel "Calculated sphere volume for radius 3" testSphereVolumeWithRadius3,
+                     TestLabel "Calculated sphere volume for radius 6" testSphereVolumeWithRadius6,
+                     TestLabel "Calculated sphere area for radius 3" testSphereAreaWithRadius3,
+                     TestLabel "Calculated sphere area for radius 6" testSphereAreaWithRadius6]
