@@ -33,6 +33,9 @@ testSphereAreaWithRadius6 =
 testCuboidVolumeWithSpecificSideLengths = 
     TestCase (assertEqual "cuboid volume" 24 (Cuboid.volume 3 2 4))
 
+testCuboidAreaWithSpecificSideLengths = 
+    TestCase (assertEqual "cuboid area" 52 (Cuboid.area 3 2 4))
+
 allTests = 
     TestList [
         TestLabel "Calculated cube volume for side length 3" testCubeVolumeWithSideLength3,
@@ -43,7 +46,8 @@ allTests =
         TestLabel "Calculated sphere volume for radius 6" testSphereVolumeWithRadius6,
         TestLabel "Calculated sphere area for radius 3" testSphereAreaWithRadius3,
         TestLabel "Calculated sphere area for radius 6" testSphereAreaWithRadius6,
-        TestLabel "Calculated cuboid volume for a=3 b=2 h=4" testCuboidVolumeWithSpecificSideLengths
+        TestLabel "Calculated cuboid volume for a=3 b=2 h=4" testCuboidVolumeWithSpecificSideLengths,
+        TestLabel "Calculated cuboid area for a=3 b=2 h=4" testCuboidAreaWithSpecificSideLengths
     ]
 
 main = do runTestTT allTests
